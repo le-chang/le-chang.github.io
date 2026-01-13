@@ -14,23 +14,20 @@ params:
   description: "博士后研究员 | 科学家 | 生命教育学者"
   author: 常乐乐博士
   
+  # 启用暗色模式切换
+  defaultTheme: auto
+  disableThemeToggle: false  # 确保这个是 false 或者不写
+  
   # 首页信息
   homeInfoParams:
-    Title: "欢迎来到我的个人网站"
+    Title: "让生命恢复美感，用文字重塑秩序"
     Content: >
       博士后研究员 × 科学家 × 生命教育学者 × 人生教练。
       
-      让生命恢复美感，用文字重塑秩序。
-
+      
+      
       赋能高认知、高学历的创作者，在不迎合流量、不消耗自我的前提下，构建「写作表达 × 商业结构 × AI 协作」系统，用不内耗的写作方式，将真实生命经验转化为实现自我价值、并可长期复利的内容资产。
-
-  # 社交链接
-  socialIcons:
-    - name: wechat
-      url: "/wechat-qr/"  # 指向你的微信二维码页面
-    - name: wechat-mp
-      url: "/wechat-mp-qr/"  # 指向你的公众号二维码页面
-
+  
   # SEO 相关
   ShowReadingTime: true
   ShowShareButtons: true
@@ -65,6 +62,10 @@ menu:
       name: 搜索
       url: /search/
       weight: 30
+    - identifier: wechat-mp
+      name: 公众号
+      url: /wechat-mp-qr/
+      weight: 40
 
 # 输出格式（支持搜索）
 outputs:
