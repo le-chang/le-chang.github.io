@@ -1,6 +1,6 @@
 baseURL: "https://le-chang.github.io/"
 languageCode: zh-cn
-title: "Chang Le Le PhD"
+title: "常乐乐博士"
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -10,24 +10,26 @@ buildExpired: false
 
 params:
   env: production
-  title: "Chang Le Le PhD"
-  description: "写作教练 | 生物信息研究者 | 个人成长"
-  author: Le Chang
+  title: "常乐乐博士"
+  description: "博士后研究员 | 科学家 | 生命教育学者"
+  author: 常乐乐博士
   
   # 首页信息
   homeInfoParams:
     Title: "欢迎来到我的个人网站"
     Content: >
-      写作教练 × 计算遗传学研究者。
+      博士后研究员 × 科学家 × 生命教育学者 × 人生教练。
       
-      专注于个人成长、学术研究与自我实现。
+      让生命恢复美感，用文字重塑秩序。
+
+      赋能高认知、高学历的创作者，在不迎合流量、不消耗自我的前提下，构建「写作表达 × 商业结构 × AI 协作」系统，用不内耗的写作方式，将真实生命经验转化为实现自我价值、并可长期复利的内容资产。
 
   # 社交链接
   socialIcons:
-    - name: email
-      url: "mailto:your-email@example.com"
-    - name: github
-      url: "https://github.com/le-chang"
+    - name: wechat
+      url: "/wechat-qr/"  # 指向你的微信二维码页面
+    - name: wechat-mp
+      url: "/wechat-mp-qr/"  # 指向你的公众号二维码页面
 
   # SEO 相关
   ShowReadingTime: true
