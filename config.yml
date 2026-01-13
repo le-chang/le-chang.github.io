@@ -1,0 +1,72 @@
+baseURL: "https://le-chang.github.io/"
+languageCode: zh-cn
+title: "Chang Le Le PhD"
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+params:
+  env: production
+  title: "Chang Le Le PhD"
+  description: "写作教练 | 生物信息研究者 | 个人成长"
+  author: Le Chang
+  
+  # 首页信息
+  homeInfoParams:
+    Title: "欢迎来到我的个人网站"
+    Content: >
+      写作教练 × 计算遗传学研究者。
+      
+      专注于个人成长、学术研究与自我实现。
+
+  # 社交链接
+  socialIcons:
+    - name: email
+      url: "mailto:your-email@example.com"
+    - name: github
+      url: "https://github.com/le-chang"
+
+  # SEO 相关
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  
+  # 搜索
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# 菜单
+menu:
+  main:
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 10
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 20
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 30
+
+# 输出格式（支持搜索）
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
