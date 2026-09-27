@@ -17,7 +17,7 @@ latest_posts:
   enabled: false
 ---
 
-**Le Chang** — computational geneticist working on **statistical genomics for precision health**. I use human genetic variation as a natural experiment to separate cause from consequence among the organ-level and molecular factors that shape aging and age-related disease, and to translate those causal signals into biomarkers, drug targets and pharmacogenomic insight. My current work is on the kidney–brain axis in neurodegeneration, and I build the open-source platforms and pipelines that make these analyses usable by others.
+**Le Chang, PhD** — computational geneticist working on **statistical genomics for precision health**. I use human genetic variation as a natural experiment to separate cause from consequence among the organ-level and molecular factors that shape aging and age-related disease, and to translate those causal signals into biomarkers, drug targets and pharmacogenomic insight. My current work is on the kidney–brain axis in neurodegeneration, and I build the open-source platforms and pipelines that make these analyses usable by others.
 
 **I am on the faculty job market (2027–2028 start).** [Curriculum vitae (PDF)](/assets/pdf/Le_Chang_CV.pdf) · [email](mailto:le.chang@umontreal.ca)
 
