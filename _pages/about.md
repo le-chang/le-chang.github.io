@@ -63,30 +63,31 @@ View a list of current publications on [Google Scholar.](https://scholar.google.
    **L. Chang**\*, S. Gawhary\*, L. Maameri, W. Belbellaj, F. Lona-Durazo, S.A. Gagliano Taliun<br>
    *Nature Communications*, 2026 · [doi:10.1038/s41467-026-77920-3](https://doi.org/10.1038/s41467-026-77920-3)
 
-2. **Exploring and visualizing stratified genome-wide association study results with PheWeb 2**<br>
-   J. Bellavance\*, H. Xiao\*, **L. Chang**, M. Kazemi, S. Wickramasinghe, A.J. Mayhew, P. Raina, P. VandeHaar, D. Taliun, S.A. Gagliano Taliun<br>
-   *Nature Genetics*, 2026; 58(2):233–235 · [doi:10.1038/s41588-025-02469-8](https://doi.org/10.1038/s41588-025-02469-8)
+2. **miRNet 2.0: network-based visual analytics for miRNA functional analysis and systems biology**<br>
+   **L. Chang**, G. Zhou, O. Soufan, J. Xia<br>
+   *Nucleic Acids Research*, 2020; 48(W1):W244–W251 · [doi:10.1093/nar/gkaa467](https://doi.org/10.1093/nar/gkaa467) · ESI Highly Cited Paper, 900+ citations
 
 3. **The relationship between kidney health and neurodegenerative diseases**<br>
    M. Zuo\*, **L. Chang**\*, N. Neale, L. Maameri, S. Gawhary, F. Lona-Durazo, S.A. Gagliano Taliun<br>
    *Brain*, 2025; 148(8):2616–2630 · [doi:10.1093/brain/awaf113](https://doi.org/10.1093/brain/awaf113)
 
-4. **Human milk oligosaccharides are associated with maternal genetics and respiratory health of human milk-fed children**<br>
-   A. Ambalavanan, **L. Chang**, J. Choi, Y. Zhang, S.A. Stickley, Z.Y. Fang, K. Miliku, B. Robertson, C. Yonemitsu, S.E. Turvey, P.J. Mandhane, E. Simons, T.J. Moraes, S.S. Anand, G. Paré, J.E. Williams, B.M. Murdoch, G.E. Otoo, S. Mbugua, E.W. Kamau-Mbuthia, E.W. Kamundia, D.K. Gindola, J.M. Rodriguez, R.G. Pareja, D.W. Sellen, S.E. Moore, A.M. Prentice, J.A. Foster, L.J. Kvist, H.L. Neibergs, M.A. McGuire, M.K. McGuire, C.L. Meehan, M.R. Sears, P. Subbarao, M.B. Azad, L. Bode, Q. Duan<br>
-   *Nature Communications*, 2024; 15:7735 · [doi:10.1038/s41467-024-51743-6](https://doi.org/10.1038/s41467-024-51743-6)
-
-5. **A data-centric perspective on exposomics data analysis**<br>
-   **L. Chang**\*, J. Ewald\*, F. Hui, S. Bayen, J. Xia<br>
-   *Exposome*, 2024; 4(1):osae005 · [doi:10.1093/exposome/osae005](https://doi.org/10.1093/exposome/osae005)
-
-6. **mGWAS-Explorer 2.0: causal analysis and interpretation of metabolite–phenotype associations**<br>
+4. **mGWAS-Explorer 2.0: causal analysis and interpretation of metabolite–phenotype associations**<br>
    **L. Chang**, G. Zhou, J. Xia<br>
    *Metabolites*, 2023; 13(7):826 · [doi:10.3390/metabo13070826](https://doi.org/10.3390/metabo13070826)
 
-7. **mGWAS-Explorer: linking SNPs, genes, metabolites, and diseases for functional insights**<br>
+5. **mGWAS-Explorer: linking SNPs, genes, metabolites, and diseases for functional insights**<br>
    **L. Chang**, G. Zhou, H. Ou, J. Xia<br>
    *Metabolites*, 2022; 12(6):526 · [doi:10.3390/metabo12060526](https://doi.org/10.3390/metabo12060526)
 
-8. **miRNet 2.0: network-based visual analytics for miRNA functional analysis and systems biology**<br>
-   **L. Chang**, G. Zhou, O. Soufan, J. Xia<br>
-   *Nucleic Acids Research*, 2020; 48(W1):W244–W251 · [doi:10.1093/nar/gkaa467](https://doi.org/10.1093/nar/gkaa467) · ESI Highly Cited Paper, 900+ citations
+6. **A data-centric perspective on exposomics data analysis**<br>
+   **L. Chang**\*, J. Ewald\*, F. Hui, S. Bayen, J. Xia<br>
+   *Exposome*, 2024; 4(1):osae005 · [doi:10.1093/exposome/osae005](https://doi.org/10.1093/exposome/osae005)
+
+7. **Human milk oligosaccharides are associated with maternal genetics and respiratory health of human milk-fed children**<br>
+   A. Ambalavanan, **L. Chang**, J. Choi, Y. Zhang, S.A. Stickley, Z.Y. Fang, K. Miliku, B. Robertson, C. Yonemitsu, S.E. Turvey, P.J. Mandhane, E. Simons, T.J. Moraes, S.S. Anand, G. Paré, J.E. Williams, B.M. Murdoch, G.E. Otoo, S. Mbugua, E.W. Kamau-Mbuthia, E.W. Kamundia, D.K. Gindola, J.M. Rodriguez, R.G. Pareja, D.W. Sellen, S.E. Moore, A.M. Prentice, J.A. Foster, L.J. Kvist, H.L. Neibergs, M.A. McGuire, M.K. McGuire, C.L. Meehan, M.R. Sears, P. Subbarao, M.B. Azad, L. Bode, Q. Duan<br>
+   *Nature Communications*, 2024; 15:7735 · [doi:10.1038/s41467-024-51743-6](https://doi.org/10.1038/s41467-024-51743-6)
+
+8. **Exploring and visualizing stratified genome-wide association study results with PheWeb 2**<br>
+   J. Bellavance\*, H. Xiao\*, **L. Chang**, M. Kazemi, S. Wickramasinghe, A.J. Mayhew, P. Raina, P. VandeHaar, D. Taliun, S.A. Gagliano Taliun<br>
+   *Nature Genetics*, 2026; 58(2):233–235 · [doi:10.1038/s41588-025-02469-8](https://doi.org/10.1038/s41588-025-02469-8)
+
