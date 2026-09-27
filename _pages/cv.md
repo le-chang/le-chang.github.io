@@ -3,7 +3,7 @@ layout: page
 permalink: /cv/
 title: cv
 nav: true
-nav_order: 2
+nav_order: 1
 description: Curriculum vitae — <a href="/assets/pdf/Le_Chang_CV.pdf">download the PDF</a>.
 ---
 

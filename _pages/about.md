@@ -2,10 +2,9 @@
 layout: about
 title: home
 permalink: /
-nav: true
-nav_order: 1
 subtitle: >
-  Postdoctoral Research Fellow · Research Centre, Montreal Heart Institute &amp; Faculty of Medicine, Université de Montréal ·
+  Postdoctoral Research Fellow<br>
+  Research Centre, Montreal Heart Institute &amp; Faculty of Medicine, Université de Montréal<br>
   <a href="mailto:le.chang@umontreal.ca">le.chang@umontreal.ca</a>
 
 selected_papers: true # renders the entries marked selected={true} in _bibliography/papers.bib
