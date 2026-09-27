@@ -5,10 +5,10 @@ permalink: /
 subtitle: >
   Postdoctoral Research Fellow<br>
   Research Centre, Montreal Heart Institute &amp; Faculty of Medicine, Université de Montréal<br>
-  <a href="mailto:le.chang@umontreal.ca">le.chang@umontreal.ca</a>
+  le.chang [at] umontreal [dot] ca
 
 selected_papers: true # renders the entries marked selected={true} in _bibliography/papers.bib
-social: true # social icons (email, ORCID, Google Scholar, GitHub) at the bottom of the page
+social: false # no social icons at the bottom of the page
 
 announcements:
   enabled: false
@@ -17,9 +17,9 @@ latest_posts:
   enabled: false
 ---
 
-**Le Chang, PhD** — computational geneticist working on **statistical genomics for precision health**. I use human genetic variation as a natural experiment to separate cause from consequence among the organ-level and molecular factors that shape aging and age-related disease, and to translate those causal signals into biomarkers, drug targets and pharmacogenomic insight. My current work is on the kidney–brain axis in neurodegeneration, and I build the open-source platforms and pipelines that make these analyses usable by others.
+**Le Chang** — computational geneticist working on **statistical genomics for precision health**. I use human genetic variation as a natural experiment to separate cause from consequence among the organ-level and molecular factors that shape aging and age-related disease, and to translate those causal signals into biomarkers, drug targets and pharmacogenomic insight. My current work is on the kidney–brain axis in neurodegeneration, and I build the open-source platforms and pipelines that make these analyses usable by others.
 
-**I am on the faculty job market (2027–2028 start).** [Curriculum vitae (PDF)](/assets/pdf/Le_Chang_CV.pdf) · [email](mailto:le.chang@umontreal.ca)
+**I am on the faculty job market (2027–2028 start).** [Curriculum vitae (PDF)](/assets/pdf/Le_Chang_CV.pdf) · email: le.chang [at] umontreal [dot] ca
 
 #### Degrees
 
