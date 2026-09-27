@@ -16,6 +16,3 @@ Every push to `main` triggers `.github/workflows/deploy.yml`, which builds the s
 
 The stable public URL of the CV is `https://le-chang.github.io/assets/pdf/Le_Chang_CV.pdf`.
 
-## History
-
-The previous Hugo/PaperMod site (常乐乐博士) is preserved on the `hugo-brand-backup` branch.
