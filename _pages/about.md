@@ -34,24 +34,23 @@ I trained as computational geneticist in [Prof. Jeff Xia's lab](https://www.xial
 
 #### Awards and recognitions
 
-- CIHR Fellowship, Canadian Institutes of Health Research (principal applicant), 2025–2027
+- CIHR Fellowship, Canadian Institutes of Health Research, 2025–2027
 - Postdoctoral Fellowship Award, Heart and Stroke Foundation of Canada, 2025 (declined in favour of the CIHR Fellowship)
-- CPRIT BIG-TCR Postdoctoral Fellowship, Cancer Prevention and Research Institute of Texas, 2024
+- CPRIT BIG-TCR Postdoctoral Fellowship, 2024
 - NSERC CREATE MATRIX Scholarship, 2019–2023
 - ISMB 2020 Fellowship Award, International Society for Computational Biology
 - MANA Early-Career Travel Award, Metabolomics Association of North America, 2022
 - Graduate Excellence Award, Department of Human Genetics, McGill University, 2019
 - Three ESI Highly Cited Papers (Web of Science); miRNet 2.0 cited more than 900 times
-- Invited guest, *The Brain Podcast* (official podcast of the journal *Brain*), 2025
-- Youth Editor, *iMeta*, 2025–2028
+
 
 #### Research interests
 
 - **Causal genetics of organ–brain axes in aging.** Genome-wide and local genetic correlation, conjunctional FDR and colocalization to find where kidney, liver and metabolic traits share causal variants with neurodegenerative disease — and Mendelian randomization to test which connections are causal.
 - **Multi-omics for biomarkers and drug targets.** Integrating proteomic, metabolomic and transcriptomic QTLs with GWAS to prioritize predictive and prognostic biomarkers and genetically validated therapeutic targets, including drug-target and drug-response genes, as a route to pharmacogenomics and personalized medicine.
-- **Multi-ancestry and sex-stratified genomics.** Large-scale GWAS meta-analysis of kidney and urinary traits (hematuria, eGFR, urinary electrolytes) across ancestries and sexes, so that genomic discoveries translate equitably.
-- **Open bioinformatics platforms and reproducible pipelines.** Web tools and Nextflow workflows that let clinicians and researchers run these genomic analyses without writing code.
+- **Multi-ancestry and sex-stratified genomics.** Large-scale GWAS meta-analysis of complex traits and diseases across ancestries and sexes, so that genomic discoveries benefit all populations equitably.
+- **Open bioinformatics platforms and reproducible pipelines.** Web-based platforms and Nextflow workflows that provide clinicians and researchers with user-friendly, intuitive interfaces for complex data analyses..
 
 #### Publications
 
-14 publications, including 6 (co-)first-author papers and three ESI Highly Cited Papers (Web of Science). Full list on [Google Scholar](https://scholar.google.com/citations?user=4gp69pcAAAAJ) · [ORCID](https://orcid.org/0000-0002-0966-7923) · [ResearchGate](https://www.researchgate.net/profile/Le-Chang-4). Selected publications (first-author papers plus two co-authored papers) are listed below; \* denotes equal contribution.
+View a list of current publications on [Google Scholar.](https://scholar.google.com/citations?user=4gp69pcAAAAJ) 
