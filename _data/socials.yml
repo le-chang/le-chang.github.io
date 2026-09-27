@@ -1,0 +1,7 @@
+# Social / contact links shown at the bottom of the home page, in the order defined here.
+# Available keys: https://github.com/george-gca/jekyll-socials
+email: le.chang@umontreal.ca
+orcid_id: 0000-0002-0966-7923
+scholar_userid: 4gp69pcAAAAJ # Google Scholar profile ID
+github_username: le-chang
+cv_pdf: /assets/pdf/Le_Chang_CV.pdf

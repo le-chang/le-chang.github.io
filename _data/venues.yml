@@ -1,0 +1,20 @@
+# Venue abbreviations used in the "abbr" field of _bibliography/papers.bib
+"Nat Commun":
+  url: https://www.nature.com/ncomms/
+  color: "#1b3a5c"
+
+"Brain":
+  url: https://academic.oup.com/brain
+  color: "#6d2e46"
+
+"NAR":
+  url: https://academic.oup.com/nar
+  color: "#2c5f2d"
+
+"Nat Protoc":
+  url: https://www.nature.com/nprot/
+  color: "#1b3a5c"
+
+"Metabolites":
+  url: https://www.mdpi.com/journal/metabolites
+  color: "#8a5a00"
