@@ -8,7 +8,7 @@ subtitle: >
   Postdoctoral Research Fellow · Research Centre, Montreal Heart Institute &amp; Faculty of Medicine, Université de Montréal ·
   <a href="mailto:le.chang@umontreal.ca">le.chang@umontreal.ca</a>
 
-selected_papers: false
+selected_papers: true # renders the entries marked selected={true} in _bibliography/papers.bib
 social: true # social icons (email, ORCID, Google Scholar, GitHub) at the bottom of the page
 
 announcements:
@@ -55,6 +55,4 @@ I trained as a bioinformatics tool-builder in Jeff Xia's lab at McGill, where I 
 
 #### Publications
 
-14 publications, including 6 (co-)first-author papers and three ESI Highly Cited Papers. Full list on [Google Scholar](https://scholar.google.com/citations?user=4gp69pcAAAAJ) · [ORCID](https://orcid.org/0000-0002-0966-7923) · [ResearchGate](https://www.researchgate.net/profile/Le-Chang-4).
-
-Selected: [Chang\*, Gawhary\* et al., *Nature Communications* 2026](https://doi.org/10.1038/s41467-026-77920-3) · [Zuo\*, Chang\* et al., *Brain* 2025](https://doi.org/10.1093/brain/awaf113) · [Chang et al., miRNet 2.0, *Nucleic Acids Research* 2020](https://doi.org/10.1093/nar/gkaa467)
+14 publications, including 6 (co-)first-author papers and three ESI Highly Cited Papers (Web of Science). Full list on [Google Scholar](https://scholar.google.com/citations?user=4gp69pcAAAAJ) · [ORCID](https://orcid.org/0000-0002-0966-7923) · [ResearchGate](https://www.researchgate.net/profile/Le-Chang-4). Selected publications (first-author papers plus two co-authored papers) are listed below; \* denotes equal contribution.

@@ -18,3 +18,15 @@
 "Metabolites":
   url: https://www.mdpi.com/journal/metabolites
   color: "#8a5a00"
+
+"Nat Genet":
+  url: https://www.nature.com/ng/
+  color: "#1b3a5c"
+
+"Exposome":
+  url: https://academic.oup.com/exposome
+  color: "#2c5f2d"
+
+"iScience":
+  url: https://www.cell.com/iscience/home
+  color: "#52606d"
