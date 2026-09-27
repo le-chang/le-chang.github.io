@@ -5,7 +5,7 @@ permalink: /
 subtitle: >
   CIHR Postdoctoral Research Fellow - Computational Genetics and Bioinformatics<br>
   Research Centre, Montreal Heart Institute &amp; Faculty of Medicine, Université de Montréal<br>
-  le.chang [at] umontreal [dot] ca
+  Email: le.chang [at] umontreal [dot] ca
 
 selected_papers: true # renders the entries marked selected={true} in _bibliography/papers.bib
 social: false # no social icons at the bottom of the page
@@ -20,16 +20,17 @@ latest_posts:
 
 **I am on the faculty job market (2027–2028 start).** [Curriculum vitae (PDF)](/assets/pdf/Le_Chang_CV.pdf) 
 
+
 #### Degrees
 
-- **PhD**, Human Genetics (Bioinformatics), McGill University, 2023
+- **PhD**, Human Genetics, McGill University, 2023
 - **MBI**, Biomedical Informatics, Queen's University, 2019 
 - **BSc**, Nutrition and Food Science, University of Alberta, 2015 
 - **BEng**, Bioengineering, Northwest A&F University, 2015 
 
 #### Short bio
 
-I trained as a bioinformatics tool-developer in [Jeff Xia's lab](https://www.xialab.ca) at McGill, where I was lead developer and first author of [miRNet 2.0](https://doi.org/10.1093/nar/gkaa467) and [mGWAS-Explorer](https://doi.org/10.3390/metabo12060526) ([2.0](https://doi.org/10.3390/metabo13070826)) and a contributing developer of [MetaboAnalyst 5.0](https://doi.org/10.1093/nar/gkab382) — platforms used by hundreds of thousands of researchers. I then joined [Sarah Gagliano Taliun's lab](https://sgagliano.github.io/) at the Montreal Heart Institute / Université de Montréal as a CIHR postdoctoral research fellow. There I lead cross-trait and causal genetic analyses linking kidney, liver, and metabolic traits to neurodegenerative disease, drawing on multi-ancestry and sex-stratified GWAS in UK Biobank, the Million Veteran Program, and the Michigan Genomics Initiative, as well as multi-omics Mendelian randomization in the Canadian Longitudinal Study on Aging. My first-author study of Parkinson's disease and kidney-related traits was published in [*Nature Communications* (2026)](https://doi.org/10.1038/s41467-026-77920-3), and our review of kidney health and neurodegeneration in [*Brain* (2025)](https://doi.org/10.1093/brain/awaf113) was featured on the journal's [podcast](https://open.spotify.com/episode/0OdP5vSjzd7nMwLEeetqsR).
+I trained as computational geneticist in [Prof. Jeff Xia's lab](https://www.xialab.ca) at McGill, where I was lead developer and first author of [miRNet 2.0](https://doi.org/10.1093/nar/gkaa467) and [mGWAS-Explorer 1.0](https://doi.org/10.3390/metabo12060526) & [2.0](https://doi.org/10.3390/metabo13070826) and a contributing developer of [MetaboAnalyst 5.0](https://doi.org/10.1093/nar/gkab382) — platforms used by hundreds of thousands of researchers. I am currently a CIHR postdoctoral research fellow in [Prof. Sarah Gagliano Taliun's lab](https://sgagliano.github.io/) at the Montreal Heart Institute / Université de Montréal. There I lead cross-trait and causal genetic analyses linking kidney, liver, and metabolic traits to neurodegenerative diseases, using multi-ancestry and sex-stratified GWAS in UK Biobank, the Million Veteran Program, and the Michigan Genomics Initiative, as well as multi-omics Mendelian randomization in the Canadian Longitudinal Study on Aging. My study of Parkinson's disease and kidney-related traits was published in [Nature Communications (2026)](https://doi.org/10.1038/s41467-026-77920-3), and our review of kidney health and neurodegeneration in [Brain (2025)](https://doi.org/10.1093/brain/awaf113) was featured on the journal's [podcast](https://open.spotify.com/episode/0OdP5vSjzd7nMwLEeetqsR).
 
 #### Awards and recognitions
 
