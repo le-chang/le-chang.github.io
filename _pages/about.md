@@ -18,7 +18,7 @@ latest_posts:
 ---
 
 
-**I am on the faculty job market (2027–2028 start).** [Curriculum vitae (PDF)](/assets/pdf/Le_Chang_CV.pdf) 
+**Seeking a faculty position (2027–2028 start).** [Curriculum vitae (PDF)](/assets/pdf/Le_Chang_CV.pdf) 
 
 
 #### Degrees
