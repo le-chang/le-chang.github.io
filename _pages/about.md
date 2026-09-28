@@ -5,7 +5,7 @@ permalink: /
 subtitle: >
   CIHR Postdoctoral Research Fellow - Computational Genetics and Bioinformatics<br>
   Research Centre, Montreal Heart Institute &amp; Faculty of Medicine, Université de Montréal<br>
-  Email: le.chang [at] umontreal [dot] ca
+  **Contact**: le.chang [at] umontreal [dot] ca
 
 selected_papers: false # the Selected Publications list is written directly below (no theme block)
 social: false # no social icons at the bottom of the page
