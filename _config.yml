@@ -6,8 +6,7 @@ title: Le Chang # the website title (if blank, full name will be used instead)
 first_name: Le
 middle_name:
 last_name: Chang
-contact_note: >
-  Email is the best way to reach me.
+contact_note: # left empty on purpose: no note under the social icons
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Le Chang — computational geneticist. Statistical genomics for precision health: causal genetics of organ–brain
   axes in aging and neurodegeneration, multi-omics Mendelian randomization for biomarkers and drug targets, and open bioinformatics platforms.
