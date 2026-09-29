@@ -8,7 +8,7 @@ subtitle: >
   <strong>Contact</strong>: le.chang [at] umontreal [dot] ca
 
 selected_papers: false # the Selected Publications list is written directly below (no theme block)
-social: false # no social icons at the bottom of the page
+social: true # Google Scholar · ORCID · ResearchGate · LinkedIn icons at the bottom of the page (see _data/socials.yml)
 
 announcements:
   enabled: false
