@@ -220,6 +220,7 @@ kramdown:
 include: ["_pages"]
 exclude:
   - AGENTS.md
+  - cv-source/ # Word source of the public CV (assets/pdf/Le_Chang_CV.pdf); kept in git, not published
   - al-folio-upgrade-report.md
   - bin/
   - CLAUDE.md
