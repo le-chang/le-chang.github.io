@@ -1,0 +1,582 @@
+%% ============================================================================
+%%  Le Chang -- Curriculum Vitae
+%%
+%%  Built on the moderncv class ("classic" style, black colour scheme) with a
+%%  customised header, entry macros and link colour.  The layout follows the CV
+%%  of Pembe Gizem Özdil (gizemozd.github.io), which is also a moderncv document.
+%%
+%%  Compile with pdfLaTeX, twice (the second run resolves the page total in the
+%%  footer):      latexmk -pdf Le_Chang_CV.tex
+%%  On Overleaf:  upload this file and keep the compiler set to pdfLaTeX.
+%%
+%%  Packages used: moderncv, lmodern, fontawesome5, marvosym, microtype,
+%%  geometry, accsupp -- all part of TeX Live / MacTeX / Overleaf.
+%%
+%%  How the file is organised:
+%%    1. Preamble (page setup, colours, fonts, the entry macros)
+%%    2. Header   (\makecvheader: name, tagline, contact lines)
+%%    3. Sections (\section, then \entry / \cvitem / \pub / \talk / \poster)
+%% ============================================================================
+\documentclass[11pt,letterpaper,roman]{moderncv}   % for A4, replace letterpaper with a4paper
+\moderncvstyle{classic}
+\moderncvcolor{black}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}                % Latin Modern, the typeface of the whole document
+\usepackage{microtype}
+\usepackage{fontawesome5}           % icons in the header
+\usepackage{accsupp}                % keeps icons and bullets out of copied / extracted text
+% Margins. The CV currently fills exactly seven pages; if an edit spills a few
+% lines onto a new page, the bottom margin is the first thing to adjust.
+\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.7cm,footskip=0.9cm]{geometry}
+
+%% ---------------------------------------------------------------------------
+%%  Colours and links
+%% ---------------------------------------------------------------------------
+\definecolor{subtlegray}{rgb}{0.45,0.45,0.45}   % tagline, remarks, page numbers
+\definecolor{themecolor}{HTML}{B509AC}          % hyperlinks: the theme colour of le-chang.github.io
+% URLs and DOIs: same font as the surrounding text; a line may break after a slash only
+\urlstyle{same}
+\def\UrlBreaks{\do\/}\def\UrlBigBreaks{}
+\def\UrlOrds{\do\*\do\-\do\~\do\'\do\"\do\.\do\@\do\!\do\_\do\|\do\;\do\>\do\]\do\)\do\,\do\?\do\&\do\+\do\=\do\#\do\:}
+\mathchardef\UrlBreakPenalty=100
+\AtEndPreamble{\hypersetup{%
+  colorlinks = true,
+  urlcolor   = themecolor,
+  linkcolor  = subtlegray,
+  pdftitle   = {Le Chang -- Curriculum Vitae},
+  pdfauthor  = {Le Chang},
+  pdfsubject = {Curriculum Vitae},
+  pdfkeywords= {Le Chang, curriculum vitae, statistical genetics, bioinformatics}}}
+
+%% ---------------------------------------------------------------------------
+%%  Fonts and lengths
+%% ---------------------------------------------------------------------------
+\renewcommand*{\namefont}{\fontsize{28}{30}\mdseries\upshape}
+\renewcommand*{\titlefont}{\small\mdseries\itshape}
+\renewcommand*{\addressfont}{\small\mdseries\slshape}
+\providecommand*{\pagenumberfont}{}
+\renewcommand*{\pagenumberfont}{\small\itshape\color{subtlegray}}   % "2/7" in the footer
+\setlength{\hintscolumnwidth}{2.3cm}       % width of the left (dates) column
+\setlength{\separatorcolumnwidth}{9pt}     % gap between the two columns
+\hyphenpenalty=10000                       % never hyphenate words (names, titles, DOIs)
+\emergencystretch=1.5em
+% list bullet: small open circle (read as a normal bullet when text is copied)
+\renewcommand*{\labelitemi}{\strut\textcolor{color1}{\usefont{U}{mvs}{m}{n}%
+  \BeginAccSupp{method=hex,unicode,ActualText=2022}\symbol{123}\EndAccSupp{}}}
+
+%% ---------------------------------------------------------------------------
+%%  The basic two-column row: \cvitem[space after]{left column}{main column}
+%%  (same definition as moderncv's classic style, fixed here so that the layout
+%%  does not depend on the moderncv version installed)
+%% ---------------------------------------------------------------------------
+\renewcommand*{\cvitem}[3][.25em]{%
+  \begin{tabular}{@{}p{\hintscolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\maincolumnwidth}@{}}%
+    \raggedleft\hintstyle{#2} &{#3}%
+  \end{tabular}%
+  \par\addvspace{#1}}
+
+%% ---------------------------------------------------------------------------
+%%  Section heading (bar in the dates column + title), with tighter spacing
+%% ---------------------------------------------------------------------------
+\makeatletter
+\newcommand*{\cv@nobreakvspace}[1]{\nobreak\vskip#1\relax}
+% \cvitem variant that forbids a page break after it
+\newcommand*{\cvitemkeep}[3][.25em]{{\let\addvspace\cv@nobreakvspace\cvitem[#1]{#2}{#3}}}
+\RenewDocumentCommand{\section}{sm}{%
+  \par\addvspace{1ex}%
+  \cvitemkeep[.4ex]%
+    {\phantomsection\addcontentsline{toc}{section}{#2}%
+     \strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\hintscolumnwidth}{0.95ex}}}%
+    {\strut\sectionstyle{#2}}%
+  \@afterheading}
+\makeatother
+
+%% ---------------------------------------------------------------------------
+%%  Building blocks
+%%
+%%  Line breaks:  use \\ in the left (dates) column and \newline in the main
+%%  column.
+%% ---------------------------------------------------------------------------
+% small grey remark after a section title, e.g. \section{Publications\secnote{...}}
+\newcommand*{\secnote}[1]{\texorpdfstring{\ {\small\color{subtlegray}(#1)}}{}}
+
+% bold sub-heading inside a section (kept on the same page as what follows)
+\newcommand*{\subhead}[1]{\cvitemkeep{}{\textbf{#1}}}
+
+% italic note pushed to the right margin; if it does not fit on the line it
+% moves to the next one and stays flush right
+\newcommand*{\rightnote}[1]{\unskip\nobreak\hfill\penalty0\hskip1em\hbox{}\nobreak\hfill\mbox{\itshape#1}}
+
+% \entry{dates}{heading}{note at the right margin}{details, set in small type}
+%   (leave the third or fourth argument empty if not needed; the details may
+%   contain an itemize list)
+\newcommand*{\entry}[4]{%
+  \cvitem{#1}{%
+    #2\ifblank{#3}{}{\rightnote{#3}}\strut%
+    \ifblank{#4}{}{\newline%
+      \begin{minipage}[t]{\linewidth}\small#4\ifhmode\unskip\vphantom{p}\fi\end{minipage}}}}
+
+% \pub{label}{title}{authors, venue, identifiers}
+\newcommand*{\pub}[3]{\cvitem{#1}{{\raggedright\bfseries#2\endgraf}#3}}
+
+% \talk{date}{title}{event and host}{place}
+\newcommand*{\talk}[4]{%
+  \cvitem{#1}{{\raggedright\slshape#2\strut\endgraf}%
+    \begin{minipage}[t]{\linewidth}\small#3\rightnote{#4}\end{minipage}}}
+
+% \poster{date}{title}{authors}{meeting}{place}
+\newcommand*{\poster}[5]{%
+  \cvitem{#1}{{\raggedright\slshape#2\strut\endgraf}%
+    \begin{minipage}[t]{\linewidth}\small#3\newline#4\rightnote{#5}\end{minipage}}}
+
+% shorthands
+\newcommand*{\me}{\textbf{L.~Chang}}                              % own name in author lists
+\newcommand*{\doi}[1]{\href{https://doi.org/#1}{DOI:~\nolinkurl{#1}}}   % \doi{10.xxxx/yyyy}
+\newcommand*{\weblink}[2][]{\href{https://\ifblank{#1}{#2}{#1}}{\nolinkurl{#2}}}   % \weblink[target]{text shown}
+\newcommand*{\distinction}[1]{\textbf{\textit{#1}}}               % e.g. ESI Highly Cited Paper
+
+%% ---------------------------------------------------------------------------
+%%  Header: name and tagline on the left, contact lines with icons on the right
+%% ---------------------------------------------------------------------------
+\newsavebox{\cvcontactbox}
+\newcommand*{\cvicon}[1]{\makebox[1.35em][c]{\normalfont\normalsize
+  \BeginAccSupp{method=escape,ActualText={}}#1\EndAccSupp{}}}
+% \contact{text}{icon}
+\newcommand*{\contact}[2]{\rule{0pt}{10pt}#1\ \cvicon{#2}}
+% \makecvheader{name}{tagline}{contact lines}{line below the tagline}
+\newcommand*{\makecvheader}[4]{%
+  \begingroup
+  \savebox{\cvcontactbox}{\addressfont\begin{tabular}[b]{@{}r@{}}#3\end{tabular}}%
+  \noindent
+  \begin{minipage}[b]{0.72\textwidth}\raggedright
+    {\namefont#1}\\[1.25em]%
+    {\titlefont\color{subtlegray}#2}%
+  \end{minipage}%
+  \hfill\makebox[0pt][r]{\usebox{\cvcontactbox}}\par
+  \vspace{1pt}%
+  {\titlefont\color{subtlegray}\noindent#4\par}%
+  \vspace{7.3pt}%
+  \endgroup}
+
+%% ---------------------------------------------------------------------------
+%%  "Last updated" line at the foot of the last page
+%% ---------------------------------------------------------------------------
+\newcommand*{\lastupdated}[1]{%
+  \par\nobreak\vfill
+  \hrule width 2in height 0.4pt\kern 2.6pt
+  {\footnotesize\noindent\rule{0pt}{7.7pt}Last updated: #1\par}}
+
+\name{Le}{Chang}   % used for the PDF metadata only; the visible header is set below
+
+%% ============================================================================
+\begin{document}
+%% ============================================================================
+
+\makecvheader
+  {Le \textbf{Chang}, PhD}
+  {CIHR Postdoctoral Research Fellow in computational genetics and bioinformatics.}
+  {\contact{le.chang [at] umontreal [dot] ca}{\faEnvelope}\\
+   \contact{Permanent Resident of Canada}{\faCanadianMapleLeaf}\\
+   \contact{\href{https://scholar.google.com/citations?user=4gp69pcAAAAJ}{Google Scholar}}{\scalebox{0.85}{\faGraduationCap}}\\
+   \contact{\href{https://orcid.org/0000-0002-0966-7923}{0000-0002-0966-7923}}{\faOrcid}\\
+   \contact{\href{https://www.researchgate.net/profile/Le-Chang-4}{ResearchGate}}{\faResearchgate}\\
+   \contact{\href{https://le-chang.github.io}{le-chang.github.io}}{\faGlobe}}
+  {Research Centre, Montreal Heart Institute, 5000 rue Bélanger, Montreal, Quebec H1T~1C8, Canada}
+
+%% ----------------------------------------------------------------------------
+\section{Academic Positions}
+%% ----------------------------------------------------------------------------
+\entry{Sept. 2024--\\\textit{present}}
+  {\textbf{Montreal Heart Institute \& Université de Montréal}}{Montreal, Canada}
+  {Postdoctoral Research Fellow, Research Centre (MHI) and Faculty of Medicine (UdeM)}
+
+\entry{Sept. 2023--\\Aug. 2024}
+  {\textbf{UTHealth Houston}}{Houston, USA}
+  {Postdoctoral Research Fellow, Center for Precision Health, McWilliams School of Biomedical Informatics}
+
+%% ----------------------------------------------------------------------------
+\section{Education and Training}
+%% ----------------------------------------------------------------------------
+\entry{May 2023}
+  {\textbf{McGill University, Montreal, Canada}}{}
+  {PhD, Human Genetics (Bioinformatics), Department of Human Genetics
+   \begin{itemize}
+     \item Supervisor: \href{https://www.xialab.ca}{Jianguo (Jeff) Xia} \textperiodcentered{} NSERC CREATE MATRIX Scholarship
+     \item Dissertation: Network-based approaches towards understanding genetics of metabolism and regulatory interactions
+   \end{itemize}}
+
+\entry{May 2019}
+  {\textbf{Queen's University, Kingston, Canada}}{}
+  {MBI, Biomedical Informatics, School of Computing and the Department of Biomedical and Molecular Sciences
+   \begin{itemize}
+     \item Supervisor: \href{https://www.duanlab.ca/index.html}{Qingling Duan}, Computational Genomics Laboratory
+     \item Project: Genome-wide association study of human milk oligosaccharides in the CHILD Cohort Study
+   \end{itemize}}
+
+\entry{June 2015}
+  {\textbf{University of Alberta, Edmonton, Canada}}{}
+  {BSc, Nutrition and Food Science, Faculty of Agricultural, Life \& Environmental Sciences
+   \begin{itemize}
+     \item Graduated with Distinction; Dean's List and First-Class Standing
+   \end{itemize}}
+
+\entry{June 2015}
+  {\textbf{Northwest A\&F University, Yangling, China}}{}
+  {BEng, Bioengineering
+   \begin{itemize}
+     \item ``2+2'' dual-degree program with the University of Alberta
+   \end{itemize}}
+
+%% ----------------------------------------------------------------------------
+\section{Professional Experience}
+%% ----------------------------------------------------------------------------
+\entry{June 2015--\\April 2018}
+  {\textbf{Maple Leaf Foods Inc.}}{Canada}
+  {Leadership Trainee\newline
+   Hired into the company's leadership trainee program; progressed through Production Supervisor (\mbox{2015--2016}) and Business Process Analyst (\mbox{2016--2017}) to Supply Planning Analyst (\mbox{2017--2018}). Demand forecasting and inventory analytics; managed the recipe database for 11 manufacturing facilities; supervised a 20-person production team.}
+
+%% ----------------------------------------------------------------------------
+\section{Funding}
+%% ----------------------------------------------------------------------------
+\cvitem{2025--2027}{\textbf{CIHR Fellowship}, Canadian Institutes of Health Research: ``Unraveling the genetic architecture and causal pathways of hematuria: a comprehensive multi-ancestry meta-analysis'' (my role: \textbf{principal applicant}; \$140,000)}
+
+\cvitem{2025--2026}{\textbf{Postdoctoral Fellowship Award}, Heart and Stroke Foundation of Canada (my role: \textbf{principal applicant}; \$30,000; awarded and declined in favour of the CIHR Fellowship)}
+
+\cvitem{2024}{\textbf{CPRIT BIG-TCR Postdoctoral Fellowship}, Cancer Prevention and Research Institute of Texas, Biomedical Informatics, Genomics and Translational Cancer Research Training Program: ``Decoding the role of viral transcriptional regulators in cancer'' (my role: \textbf{principal applicant}; USD \$52,704)}
+
+\cvitem{2025--\\\textit{present}}{\textbf{Approved data access}, Canadian Longitudinal Study on Aging, application 2501015: ``Multi-omics Mendelian randomization approaches to identify causal modifiable risk factors for dementia'' (three-year access; principal applicant: \href{https://sgagliano.github.io/}{Sarah A.~Gagliano Taliun}; my role: \textbf{lead analyst})}
+
+%% ----------------------------------------------------------------------------
+\section{Scholarships and Awards}
+%% ----------------------------------------------------------------------------
+\cvitem{2025--2027}{\textbf{CIHR Fellowship}, Canadian Institutes of Health Research}
+\cvitem{2025--2026}{\textbf{Postdoctoral Fellowship Award}, Heart and Stroke Foundation of Canada (declined)}
+\cvitem{2024}{\textbf{CPRIT BIG-TCR Postdoctoral Fellowship}}
+\cvitem{Sept. 2022}{\textbf{MANA Early-Career Travel Award}, Metabolomics Association of North America}
+\cvitem{June 2020}{\textbf{ISMB 2020 Fellowship Award}, International Society for Computational Biology}
+\cvitem{2019--2023}{\textbf{NSERC CREATE MATRIX Scholarship}, NSERC CREATE MATRIX Training Program}
+\cvitem{May 2019}{\textbf{Graduate Excellence Award}, Department of Human Genetics, McGill University}
+\cvitem{Jan. 2019}{\textbf{AllerGen Conference Travel Award}, AllerGen NCE Inc.}
+\cvitem{June 2015}{\textbf{Graduation with Distinction}, University of Alberta}
+\cvitem{2014, 2015}{\textbf{Dean's List and First-Class Standing}, University of Alberta}
+\cvitem{May 2015}{\textbf{Ronald A.~Chisholm Undergraduate Scholarship}, Canadian Meat Science Association}
+\cvitem{Jan. 2015}{\textbf{Ian Morrison Undergraduate Leadership Award}, University of Alberta}
+\cvitem{Jan. 2015}{\textbf{Macgregor Smith Public Speaking Competition}, Third Place, University of Alberta}
+\cvitem{Oct. 2014}{\textbf{Mary (Davidson) Howard Bar None Award}, University of Alberta}
+\cvitem{Aug. 2014}{\textbf{Student Challenge Competition}, First Place Team, Canadian Institute of Food Science and Technology}
+\cvitem{Feb. 2014}{\textbf{Hilda Wilson Memorial Volunteer Recognition Award}, University of Alberta}
+\cvitem{May 2013}{\textbf{NWAFU--ALES Undergraduate Transfer Program Award}, University of Alberta}
+
+%% ----------------------------------------------------------------------------
+\section{Publications\secnote{n = 14; * denotes equal contribution}}
+%% ----------------------------------------------------------------------------
+\cvitem{Summary}{Since 2019: 11 peer-reviewed journal articles (6 as (co-)first author, 5 as co-author), 2 book chapters (first author) and 1 published conference abstract (first author). Three ESI Highly Cited Papers (Web of Science); miRNet 2.0 has been cited more than 900 times.}
+
+\subhead{Peer-reviewed journal articles}
+
+\pub{[J1]}{Genome-wide cross-trait analysis to compare genetic architecture between Parkinson's disease and kidney-related traits}
+  {\me*, S.~Gawhary*, L.~Maameri, W.~Belbellaj, F.~Lona-Durazo, S.A.~Gagliano Taliun. \textit{Nature Communications}, 2026. Published 18 September 2026. \doi{10.1038/s41467-026-77920-3}}
+
+\pub{[J2]}{Exploring and visualizing stratified genome-wide association study results with PheWeb 2}
+  {J.~Bellavance*, H.~Xiao*, \me, M.~Kazemi, S.~Wickramasinghe, A.J.~Mayhew, P.~Raina, P.~VandeHaar, D.~Taliun, S.A.~Gagliano Taliun. \textit{Nature Genetics}, 2026; 58(2):233--235. \doi{10.1038/s41588-025-02469-8}. PMID: 41555088}
+
+\pub{[J3]}{The relationship between kidney health and neurodegenerative diseases}
+  {M.~Zuo*, \me*, N.~Neale, L.~Maameri, S.~Gawhary, F.~Lona-Durazo, S.A.~Gagliano Taliun. \textit{Brain}, 2025; 148(8):2616--2630. \doi{10.1093/brain/awaf113}. PMID: 40120077. Podcast: \weblink{open.spotify.com/episode/0OdP5vSjzd7nMwLEeetqsR}}
+
+\pub{[J4]}{Identification and catalog of viral transcriptional regulators in human diseases}
+  {C.~Citu, \me, A.M.~Manuel, N.~Enduru, Z.~Zhao. \textit{iScience}, 2025; 28(3):112081. \doi{10.1016/j.isci.2025.112081}}
+
+\pub{[J5]}{Human milk oligosaccharides are associated with maternal genetics and respiratory health of human milk-fed children}
+  {A.~Ambalavanan, \me, J.~Choi, Y.~Zhang, S.A.~Stickley, Z.Y.~Fang, K.~Miliku, B.~Robertson, C.~Yonemitsu, S.E.~Turvey, P.J.~Mandhane, E.~Simons, T.J.~Moraes, S.S.~Anand, G.~Paré, J.E.~Williams, B.M.~Murdoch, G.E.~Otoo, S.~Mbugua, E.W.~Kamau-Mbuthia, E.W.~Kamundia, D.K.~Gindola, J.M.~Rodriguez, R.G.~Pareja, D.W.~Sellen, S.E.~Moore, A.M.~Prentice, J.A.~Foster, L.J.~Kvist, H.L.~Neibergs, M.A.~McGuire, M.K.~McGuire, C.L.~Meehan, M.R.~Sears, P.~Subbarao, M.B.~Azad, L.~Bode, Q.~Duan. \textit{Nature Communications}, 2024; 15:7735. \doi{10.1038/s41467-024-51743-6}}
+
+\pub{[J6]}{A data-centric perspective on exposomics data analysis}
+  {\me*, J.~Ewald*, F.~Hui, S.~Bayen, J.~Xia. \textit{Exposome}, 2024; 4(1):osae005. \doi{10.1093/exposome/osae005}}
+
+\pub{[J7]}{mGWAS-Explorer 2.0: causal analysis and interpretation of metabolite--phenotype associations}
+  {\me, G.~Zhou, J.~Xia. \textit{Metabolites}, 2023; 13(7):826. \doi{10.3390/metabo13070826}}
+
+\pub{[J8]}{mGWAS-Explorer: linking SNPs, genes, metabolites, and diseases for functional insights}
+  {\me, G.~Zhou, H.~Ou, J.~Xia. \textit{Metabolites}, 2022; 12(6):526. \doi{10.3390/metabo12060526}}
+
+\pub{[J9]}{Using MetaboAnalyst 5.0 for LC--HRMS spectra processing, multi-omics integration and covariate adjustment of global metabolomics data}
+  {Z.~Pang, G.~Zhou, J.~Ewald, \me, O.~Hacariz, N.~Basu, J.~Xia. \textit{Nature Protocols}, 2022; 17(8):1735--1761. \doi{10.1038/s41596-022-00710-w}. \distinction{ESI Highly Cited Paper}}
+
+\pub{[J10]}{MetaboAnalyst 5.0: narrowing the gap between raw spectra and functional insights}
+  {Z.~Pang, J.~Chong, G.~Zhou, D.A.~de Lima Morais, \me, M.~Barrette, C.~Gauthier, P.-É.~Jacques, S.~Li, J.~Xia. \textit{Nucleic Acids Research}, 2021; 49(W1):W388--W396. \doi{10.1093/nar/gkab382}. \distinction{ESI Highly Cited Paper}}
+
+\pub{[J11]}{miRNet 2.0: network-based visual analytics for miRNA functional analysis and systems biology}
+  {\me, G.~Zhou, O.~Soufan, J.~Xia. \textit{Nucleic Acids Research}, 2020; 48(W1):W244--W251. \doi{10.1093/nar/gkaa467}. \distinction{ESI Highly Cited Paper; more than 900 citations}}
+
+\subhead{Book chapters}
+
+\pub{[B1]}{Computational approaches for studying signal transduction networks at cellular context}
+  {\me, J.~Xia, Z.~Zhao. In: S.~Ranganathan, M.~Cannataro, A.M.~Khan (eds) \textit{Encyclopedia of Bioinformatics and Computational Biology}, 2nd edition. Elsevier, 2025; pp.~436--444.}
+
+\pub{[B2]}{MicroRNA regulatory network analysis using miRNet 2.0}
+  {\me, J.~Xia. In: Q.~Song, Z.~Tao (eds) \textit{Transcription Factor Regulatory Networks. Methods in Molecular Biology}. Springer, 2022; pp.~185--204.}
+
+\subhead{Published conference abstracts}
+
+\pub{[A1]}{Genome-wide association study of human milk oligosaccharides in the CHILD Study}
+  {\me, A.~Ambalavanan, A.~Lamri, B.~Robertson, C.~Yonemitsu, S.~Turvey, P.~Mandhane, A.~Becker, T.~Moraes, S.~Anand, G.~Paré, D.~Lefebvre, M.~Sears, P.~Subbarao, L.~Bode, M.~Azad, Q.~Duan. \textit{Allergy, Asthma \& Clinical Immunology} (AllerGen 2019 Research Conference abstracts), 2019.}
+
+\subhead{Thesis}
+
+\pub{}{Network-based approaches towards understanding genetics of metabolism and regulatory interactions}
+  {\me. PhD dissertation, \textit{Department of Human Genetics, McGill University}, 2023.}
+
+%% ----------------------------------------------------------------------------
+\section{Software and Research Resources}
+%% ----------------------------------------------------------------------------
+\entry{}
+  {\textbf{miRNet 2.0} (\weblink[www.mirnet.ca]{mirnet.ca})}{lead developer and first author}
+  {Network-based visual analytics platform for microRNA functional analysis and systems biology, integrating miRNAs, genes, transcription factors, SNPs, lncRNAs and circRNAs across multiple species. Responsible for system architecture, database design, Java/R back end, interactive network visualization, deployment, tutorials and multi-year user support. More than 70,000 users; ESI Highly Cited Paper.}
+
+\entry{}
+  {\textbf{mGWAS-Explorer 1.0 and 2.0} (\weblink[www.mgwas.ca]{mgwas.ca})}{lead developer and first author}
+  {Platforms linking SNPs, genes, metabolites, diseases and molecular QTL evidence for the interpretation of metabolite--phenotype associations; version 2.0 adds two-sample Mendelian randomization across more than 4,000 metabolites and literature-derived semantic triples, with an accompanying R package.}
+
+\entry{}
+  {\textbf{MetaboAnalyst 5.0} (\weblink[www.metaboanalyst.ca]{metaboanalyst.ca})}{contributing developer}
+  {Designed and implemented the data-driven network analysis module and rebuilt the underlying KEGG interaction database for a platform serving more than 500,000 users.}
+
+\entry{}
+  {\textbf{PheWeb 2} (\weblink{github.com/GaglianoTaliun-Lab/PheWeb2})}{contributor}
+  {Open-source platform for exploring and visualizing stratified genome-wide association study results.}
+
+\entry{}
+  {\textbf{Analysis pipelines}}{}
+  {Reproducible, version-controlled workflows (Nextflow, SLURM) for multi-ancestry GWAS meta-analysis (REGENIE), LD score regression, local genetic correlation (LAVA), conjunctional FDR, colocalization and multivariable Mendelian randomization on Digital Research Alliance of Canada clusters.}
+
+%% ----------------------------------------------------------------------------
+\section{Oral Presentations}
+%% ----------------------------------------------------------------------------
+\subhead{Oral Presentations as Invited Speaker}
+
+\talk{26 Dec. 2024}
+  {Deciphering genetic architecture of human metabolism and gene regulatory networks: implications for public health}
+  {International Young Scholars Forum, School of Public Health, Southeast University}{Nanjing, China}
+
+\talk{21 Dec. 2024}
+  {Deciphering genetic architecture of human metabolism and gene regulatory networks: implications for public health}
+  {International Young Scholars Forum, School of Public Health,\newline Nanjing Medical University}{Nanjing, China}
+
+\talk{28 Nov. 2024}
+  {Multi-omics data integration in precision medicine: applications and prospects}
+  {International Young Scholars Forum, Institute of Future Agriculture,\newline Northwest A\&F University}{Virtual meeting}
+
+\talk{2023}
+  {Deciphering genetic architecture of human metabolism and regulatory interactions}
+  {Center for Precision Health Seminar in Precision Medicine, University of Texas Health Science Center at Houston}{Houston, Texas}
+
+\talk{7 Sept. 2022}
+  {Decoding genetic variants of molecular phenotypes and regulatory networks}
+  {Institute of Intelligent Healthcare, School of Artificial Intelligence, Nanjing University of Information Science and Technology}{Virtual meeting}
+
+\talk{2022}
+  {MicroRNA regulatory network analysis using miRNet 2.0}
+  {McGill University -- Jilin University Bioinformatics Workshop}{Montreal, Quebec}
+
+\talk{2021}
+  {Human milk oligosaccharides}
+  {Nutraceuticals and Functional Foods Global Classroom Session,\newline Universiti Malaysia Pahang}{Virtual meeting}
+
+\subhead{Oral Presentations}
+
+\talk{2019}
+  {Investigation of genetic modulators of human milk oligosaccharide concentrations in nursing mothers}
+  {Three Minute Thesis Competition, Queen's University}{Kingston, Ontario}
+
+\talk{Jan. 2019}
+  {Genome-wide association study of human milk oligosaccharides in the CHILD Study}
+  {AllerGen 2019 Research Conference, trainee oral presentation}{Toronto, Ontario}
+
+%% ----------------------------------------------------------------------------
+\section{Poster Presentations\secnote{presenting author marked ``presenter''; * denotes equal contribution}}
+%% ----------------------------------------------------------------------------
+\poster{Oct. 2026}
+  {Genome-wide cross-trait analysis to compare genetic architecture between Parkinson's disease and kidney-related traits}
+  {\me* (presenter), S.~Gawhary*, L.~Maameri, W.~Belbellaj, F.~Lona-Durazo, S.A.~Gagliano Taliun}
+  {American Society of Human Genetics (ASHG) Annual Meeting (accepted)}{Montreal, Quebec}
+
+\poster{Oct. 2026}
+  {PheWeb2.1: Exploring stratified GWAS and interaction results with the ability to easily append new summary statistics}
+  {J.~Boulais-Richard, H.~Xiao, \me, P.~Raina, D.~Taliun, S.A.~Gagliano Taliun}
+  {American Society of Human Genetics (ASHG) Annual Meeting (accepted)}{Montreal, Quebec}
+
+\poster{Oct. 2025}
+  {Assessment of global and local genetic correlations provides insights on the kidney--brain axis}
+  {\me* (presenter), S.~Gawhary*, L.~Maameri, W.~Belbellaj, F.~Lona-Durazo, S.A.~Gagliano Taliun}
+  {American Society of Human Genetics (ASHG) Annual Meeting}{Boston, Massachusetts}
+
+\poster{5 June 2025}
+  {Assessment of global and local genetic correlations between kidney-related traits and late-onset neurodegenerative diseases}
+  {S.~Gawhary, \me, L.~Maameri, W.~Belbellaj, F.~Lona-Durazo, S.A.~Gagliano Taliun}
+  {Journée de la Recherche de l'Institut de Cardiologie de Montréal}{Montréal, Québec}
+
+\poster{5 June 2025}
+  {A review of the relationship between kidney health and neurodegenerative diseases}
+  {M.~Zuo, \me, N.~Neale, L.~Maameri, S.~Gawhary, F.~Lona-Durazo, S.A.~Gagliano Taliun}
+  {Journée de la Recherche de l'Institut de Cardiologie de Montréal}{Montréal, Québec}
+
+\poster{27 May 2025}
+  {Does kidney health influence dementia and neurodegeneration}
+  {M.~Zuo, \me, N.~Neale, L.~Maameri, S.~Gawhary, F.~Lona-Durazo, S.A.~Gagliano Taliun}
+  {VAST Training Program Conference}{Toronto, Ontario}
+
+\poster{2025}
+  {Principal component analysis on the European subset from the Canadian Longitudinal Study of Aging}
+  {S.~Wickramasinghe, H.~Xiao, J.~Bellavance, \me, S.A.~Gagliano Taliun, D.~Taliun}
+  {McGill Undergraduate Science Showcase}{Montreal, Quebec}
+
+\poster{June 2023}
+  {mGWAS-Explorer 2.0: causal analysis and interpretation of metabolite--phenotype associations}
+  {\me{} (presenter), G.~Zhou, J.~Xia}
+  {4th Annual Canadian Metabolomics Conference}{Niagara-on-the-Lake, Ontario}
+
+\poster{Sept. 2022}
+  {mGWAS-Explorer: linking SNPs, genes, metabolites and diseases for functional insights}
+  {\me{} (presenter), G.~Zhou, H.~Ou, J.~Xia}
+  {4th Annual Conference of the Metabolomics Association of North America (MANA)}{Edmonton, Alberta}
+
+\poster{May 2022}
+  {mGWAS-Explorer: linking SNPs, genes, metabolites and diseases for functional insights}
+  {\me{} (presenter), G.~Zhou, H.~Ou, J.~Xia}
+  {2022 Ottawa Institute of Systems Biology Symposium}{Cornwall, Ontario}
+
+\poster{June 2021}
+  {mGWAS-Explorer: a visual analytics platform connecting metabolomics with genomics}
+  {\me{} (presenter), G.~Zhou, H.~Ou, J.~Xia}
+  {17th Annual Conference of the Metabolomics Society}{Virtual meeting}
+
+\poster{June 2021}
+  {MetaboAnalyst 5.0: narrowing the gap between raw spectra and functional insights}
+  {Z.~Pang, J.~Chong, G.~Zhou, D.A.~de Lima Morais, \me, M.~Barrette, C.~Gauthier, P.-É.~Jacques, S.~Li, J.~Xia}
+  {17th Annual Conference of the Metabolomics Society}{Virtual meeting}
+
+\poster{July 2020}
+  {miRNet 2.0: network-based visual analytics for miRNA functional analysis and systems biology}
+  {\me{} (presenter), G.~Zhou, O.~Soufan, J.~Xia}
+  {28th Conference on Intelligent Systems for Molecular Biology (ISMB 2020), Network Biology (NetBio) COSI poster session. Video: \weblink[www.youtube.com/watch?v=xyIDNN9tuiU]{youtube.com/watch?v=xyIDNN9tuiU}}{Virtual meeting}
+
+\poster{Oct. 2019}
+  {Genome-wide association study of human milk oligosaccharides in lactating mothers and interaction effects on lung health among infants in the CHILD Study}
+  {A.~Ambalavanan, \me, J.~Choi, A.~Lamri, B.~Robertson, C.~Yonemitsu, S.E.~Turvey, P.J.~Mandhane, A.B.~Becker, T.J.~Moraes, S.S.~Anand, G.~Paré, D.L.~Lefebvre, M.R.~Sears, P.~Subbarao, L.~Bode, M.B.~Azad, Q.~Duan}
+  {69th Annual Meeting of the American Society of Human Genetics (ASHG), poster 2948}{Houston, Texas}
+
+\poster{June 2019}
+  {GWAS of maternal human milk oligosaccharides demonstrates protective effects on preschool wheeze in the CHILD Study}
+  {A.~Ambalavanan*, \me*, J.~Choi, A.~Lamri, B.~Robertson, C.~Yonemitsu, S.~Turvey, P.~Mandhane, A.~Becker, T.~Moraes, S.~Anand, G.~Paré, D.~Lefebvre, M.~Sears, P.~Subbarao, L.~Bode, M.~Azad, Q.~Duan}
+  {8th Annual Canadian Human and Statistical Genetics Meeting}{Montebello, Quebec}
+
+\poster{June 2019}
+  {mGWAS-DB: elucidating genetically influenced metabotypes for mGWAS}
+  {\me{} (presenter), H.~Ou, O.~Soufan, G.~Zhou, J.~Xia}
+  {8th Annual Canadian Human and Statistical Genetics Meeting}{Montebello, Quebec}
+
+\poster{Jan. 2019}
+  {Genome-wide association study of human milk oligosaccharides in the CHILD Study}
+  {\me{} (presenter), A.~Ambalavanan, A.~Lamri, B.~Robertson, C.~Yonemitsu, S.~Turvey, P.~Mandhane, A.~Becker, T.~Moraes, S.~Anand, G.~Paré, D.~Lefebvre, M.~Sears, P.~Subbarao, L.~Bode, M.~Azad, Q.~Duan}
+  {AllerGen 2019 Research Conference}{Toronto, Ontario}
+
+\poster{May 2014}
+  {Poultry glycosaminoglycans: a new source of dietary `animal fibers' and candidate prebiotics?}
+  {\me{} (presenter), M.~Ndagijimana, Z.~Khiari, M.~Betti}
+  {Alberta Poultry Research Centre Annual General Meeting}{Edmonton, Alberta}
+
+%% ----------------------------------------------------------------------------
+\section{Teaching}
+%% ----------------------------------------------------------------------------
+\subhead{At McGill University --- Graduate level}
+
+\entry{Winter 2023}
+  {\textbf{BINF 531: Statistical Bioinformatics}}{}
+  {\textbf{Teaching Assistant}\newline
+   Ran the hands-on tutorials and marked the analyses for this graduate course.}
+
+\entry{Fall 2021}
+  {\textbf{BTEC 501: Bioinformatics}}{}
+  {\textbf{Teaching Assistant}\newline
+   Ran the hands-on tutorials and marked the analyses for this graduate course.}
+
+\subhead{Workshops, tutorials and user training}
+
+\entry{2022}
+  {\textbf{McGill University -- Jilin University Bioinformatics Workshop}}{Montreal}
+  {\textbf{Instructor}\newline
+   Taught a hands-on miRNet 2.0 session on microRNA regulatory network analysis to trainees from China.}
+
+\entry{2020--2023}
+  {\textbf{miRNet and mGWAS-Explorer}}{}
+  {\textbf{Author of training materials}\newline
+   Online tutorials, documentation, slide decks and video tutorials for the two platforms (audience: more than 70,000 miRNet users), and a step-by-step protocol chapter in \textit{Methods in Molecular Biology} (2022).}
+
+\entry{2020--2023}
+  {\textbf{User support}}{}
+  {Answered user questions from students, clinicians and researchers by email and on the laboratory's online user forum; user questions fed back into the tutorials and into new platform features.}
+
+%% ----------------------------------------------------------------------------
+\section{Supervision/Mentorship}
+%% ----------------------------------------------------------------------------
+\entry{2025--\\\textit{present}}
+  {\textbf{Trainee co-supervision}}{Montreal Heart Institute / Université de Montréal}
+  {Master's-level researchers --- cross-trait genetics of liver markers and neurodegenerative disease (with S.A.~Gagliano Taliun)}
+
+\entry{June--Aug.\\2024}
+  {\textbf{Trainee co-supervision}}{University of Texas Health Science Center at Houston}
+  {Undergraduate summer intern, CPRIT BIG-TCR Summer Intern Program --- deep-learning model for prediction of HTLV-1 viral integration sites}
+
+\entry{June 2021--\\June 2022}
+  {\textbf{Co-mentoring of undergraduate students}}{McGill University}
+  {Two undergraduate research students --- community forum and RASA conversational agent for web-based bioinformatics platforms}
+
+\entry{May 2013--\\Sept. 2015}
+  {\textbf{Peer mentoring}}{University of Alberta}
+  {Two international undergraduate students --- academic guidance and referral to campus support services}
+
+%% ----------------------------------------------------------------------------
+\section{Certifications and Other Training}
+%% ----------------------------------------------------------------------------
+\cvitem{Sept. 2025}{Potential and Strengths Coach Course, Freedom Life Coach Limited, ICF CCE}
+\cvitem{Sept. 2024}{CIHR Sex- and Gender-Based Analysis Plus (SGBA+) online training modules, Canadian Institutes of Health Research}
+\cvitem{June 2020}{Informatics and Statistics for Metabolomics, Canadian Bioinformatics Workshops}
+\cvitem{March 2019}{Expanding Horizons Professional Development Certificate, Queen's University}
+\cvitem{Aug. 2018}{Ontario Summer School on High Performance Computing (Compute Ontario)}
+\cvitem{Oct. 2015}{Six Sigma White Belt, Maple Leaf Foods Inc.}
+\cvitem{March 2015}{Competent Communicator, Toastmasters International}
+\cvitem{Dec. 2014}{ULead Leadership Program, University of Alberta}
+
+%% ----------------------------------------------------------------------------
+\section{Professional Service}
+%% ----------------------------------------------------------------------------
+\cvitem{Feb. 2025--\\Feb. 2028}{\textbf{Youth Editor}, \textit{iMeta}}
+\cvitem{2024--\textit{present}}{\textbf{Reviewer} for \textit{Brain Communications}, \textit{Journal of Alzheimer's Disease}, \textit{Scientific Reports} and other journals}
+\cvitem{Sept. 2024--\\\textit{present}}{\textbf{Member}, ASHG Volunteer Pool}
+\cvitem{Nov. 2018}{\textbf{Adjudicator}, Canadian Undergraduate Conference on Healthcare, Queen's University}
+\cvitem{Feb. 2014}{\textbf{Organizer and host}, ALES Networking Career Workshop, Faculty of Agricultural, Life \& Environmental Sciences, University of Alberta}
+\cvitem{2013--2015}{\textbf{VP Communications}, Nutrition and Food Science Students' Association, University of Alberta}
+\cvitem{Professional\\memberships}{American Society of Human Genetics (2018--present); Metabolomics Association of North America (2022--present); Global Organisation for Bioinformatics Learning, Education \& Training, GOBLET (2018--present); European Society of Human Genetics (2018); International Society for Computational Biology (2020--present); International Common Disease Alliance (2019--present); Golden Key International Honour Society (2014--present); AllerGen NCE, student member (2018--2019)}
+
+%% ----------------------------------------------------------------------------
+\section{Knowledge Translation and Outreach}
+%% ----------------------------------------------------------------------------
+\cvitem{June 2025}{\textbf{Invited guest}, \href{https://open.spotify.com/episode/0OdP5vSjzd7nMwLEeetqsR}{The Brain Podcast} (official podcast of the journal \textit{Brain}) --- ``Nephrology Meets Neurology: How Kidney Health Links to Neurodegeneration''; discussed the kidney--brain findings of the \textit{Brain} 2025 review for clinicians, researchers and the public}
+\cvitem{Oct. 2014--\\May 2015}{\textbf{Presenter}, Fun Speakers Toastmasters Club --- public talks on food safety, genetically modified foods and alternative protein sources}
+
+%% ----------------------------------------------------------------------------
+\section{Technical Skills}
+%% ----------------------------------------------------------------------------
+\cvitem{Statistical\\genetics}{GWAS (REGENIE, PLINK), multi-ancestry meta-analysis, global genetic correlation (LDSC), local genetic correlation (LAVA), conjunctional FDR, fine-mapping (SuSiE), colocalization, univariable and multivariable Mendelian randomization (TwoSampleMR, MVMR-cML-SuSiE), polygenic scores, sex-stratified and chromosome X analysis, molecular QTL (eQTL, mQTL, pQTL) integration}
+\cvitem{Multi-omics}{Genomics, metabolomics, transcriptomics, proteomics, microRNA regulation, exposomics; network analysis}
+\cvitem{Programming\\and\\infrastructure}{R, Python (pandas, scikit-learn, PyTorch), Java, JavaScript, SQL, Bash; full-stack web application development; Nextflow and SLURM pipelines on Digital Research Alliance of Canada clusters; Git; containerized, reproducible workflows}
+\cvitem{Data\\resources}{UK Biobank, Million Veteran Program, Michigan Genomics Initiative, FinnGen, Canadian Longitudinal Study on Aging, CHILD Cohort Study, GTEx, UKB-PPP}
+
+%% ----------------------------------------------------------------------------
+\section{Languages}
+%% ----------------------------------------------------------------------------
+\cvitem{}{Chinese (Mandarin; native) \textperiodcentered{} English (full professional proficiency)}
+
+\lastupdated{\today}
+
+\end{document}
