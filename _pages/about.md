@@ -46,10 +46,11 @@ I trained as computational geneticist in [Prof. Jeff Xia's lab](https://www.xial
 
 #### Research interests
 
-- **Causal genetics of organ–brain axes in aging.** Genome-wide and local genetic correlation, conjunctional FDR and colocalization to find where kidney, liver and metabolic traits share causal variants with neurodegenerative disease — and Mendelian randomization to test which connections are causal.
-- **Multi-omics for biomarkers and drug targets.** Integrating proteomic, metabolomic and transcriptomic QTLs with GWAS to prioritize predictive and prognostic biomarkers and genetically validated therapeutic targets, including drug-target and drug-response genes, as a route to pharmacogenomics and personalized medicine.
+- **Causal genetics across the life course.** Genetic correlation, colocalization and Mendelian randomization to test which exposures and molecular traits causally shape chronic disease, from human milk composition and childhood respiratory health to kidney, liver and metabolic links with neurodegeneration in aging.
+- **Maternal genetics, human milk and early development.** Building on my genome-wide study of human milk oligosaccharides in the CHILD Cohort Study, using maternal and infant genetic variation as a natural experiment to ask how milk composition, maternal nutrition and the infant microbiome influence asthma, allergy and growth.
+- **Multi-omics for biomarkers and drug targets.** Integrating proteomic, metabolomic and transcriptomic QTLs with GWAS, in birth cohorts as well as aging cohorts, to prioritize predictive and prognostic biomarkers and genetically validated therapeutic targets, including drug-target and drug-response genes, as a route to pharmacogenomics and precision medicine.
 - **Multi-ancestry and sex-stratified genomics.** Large-scale GWAS meta-analysis of complex traits and diseases across ancestries and sexes, so that genomic discoveries benefit all populations equitably.
-- **Open bioinformatics platforms and reproducible pipelines.** Web-based platforms and Nextflow workflows that provide clinicians and researchers with user-friendly, intuitive interfaces for complex data analyses..
+- **Open bioinformatics platforms and reproducible pipelines.** Web-based platforms and Nextflow workflows that provide clinicians and researchers with user-friendly, intuitive interfaces for complex data analyses.
 
 #### Publications
 
