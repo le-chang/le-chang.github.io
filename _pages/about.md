@@ -18,7 +18,7 @@ latest_posts:
 ---
 
 
-**Seeking a faculty position (2027–2028 start).** [Curriculum vitae (PDF)](/assets/pdf/Le_Chang_CV.pdf) 
+**Seeking faculty and research scientist positions in academia or industry, available from May 2027** [Curriculum vitae (PDF)](/assets/pdf/Le_Chang_CV.pdf) 
 
 
 #### Degrees
