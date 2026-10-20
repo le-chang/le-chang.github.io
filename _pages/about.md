@@ -46,7 +46,7 @@ I trained as computational geneticist in [Prof. Jeff Xia's lab](https://www.xial
 
 #### Research interests
 
-- **Genetic epidemiology across the life course.** Genetic correlation, colocalization and Mendelian randomization to identify exposures and molecular traits with genetic evidence for a role in chronic disease, from human milk composition and childhood respiratory health to kidney, liver and metabolic links with neurodegeneration in aging.
+- **Genetic contributors to chronic disease across the life course.** How do kidney, liver and metabolic health shape the brain as we age, and do these links begin earlier in life? I use genetic correlation, colocalization and Mendelian randomization to find shared genetic contributors and candidate mechanisms for experimental and clinical follow-up, from human milk composition and childhood respiratory health to neurodegeneration in aging.
 - **Translational multi-omics: biomarkers and drug targets.** Integrating proteomic, metabolomic and transcriptomic QTLs with GWAS, in birth cohorts as well as aging cohorts, to prioritize predictive and prognostic biomarkers and genetically validated therapeutic targets, including drug-target and drug-response genes, as a route to pharmacogenomics and precision medicine.
 - **Multi-ancestry and sex-stratified genomics.** Large-scale GWAS meta-analysis of complex traits and diseases across ancestries and sexes, so that genomic discoveries benefit all populations equitably.
 - **Open bioinformatics platforms and reproducible pipelines.** Web-based platforms and Nextflow workflows that provide clinicians and researchers with user-friendly, intuitive interfaces for complex data analyses.
