@@ -4,7 +4,7 @@ title: home
 permalink: /
 subtitle: >
   CIHR Postdoctoral Research Fellow - Computational Genetics and Bioinformatics<br>
-  Research Centre, Montreal Heart Institute &amp; Faculty of Medicine, Université de Montréal<br>
+  Gagliano Taliun Lab, Research Centre, Montreal Heart Institute &amp; Faculty of Medicine, Université de Montréal<br>
   <strong>Contact</strong>: le.chang [at] umontreal [dot] ca
 
 selected_papers: false # the Selected Publications list is written directly below (no theme block)
@@ -31,6 +31,10 @@ latest_posts:
 #### Short bio
 
 I have trained in bioengineering, nutrition and food science, biomedical informatics and human genetics, and worked three years in industry before graduate school. In [Prof. Qingling Duan's lab](https://www.duanlab.ca/index.html) at Queen's University, I ran a genome-wide association study of human milk oligosaccharides in the CHILD Cohort Study, published in [Nature Communications (2024)](https://doi.org/10.1038/s41467-024-51743-6). In [Prof. Jianguo (Jeff) Xia's lab](https://www.xialab.ca) at McGill University, I was lead developer and first author of [miRNet 2.0](https://doi.org/10.1093/nar/gkaa467) and [mGWAS-Explorer 1.0](https://doi.org/10.3390/metabo12060526) & [2.0](https://doi.org/10.3390/metabo13070826), and a contributing developer of [MetaboAnalyst 5.0](https://doi.org/10.1093/nar/gkab382) — platforms used by hundreds of thousands of researchers. I am currently a CIHR postdoctoral research fellow in [Prof. Sarah Gagliano Taliun's lab](https://sgagliano.github.io/) at the Montreal Heart Institute / Université de Montréal, where I lead cross-trait genetic analyses linking kidney, liver, and metabolic traits to neurodegenerative diseases, using multi-ancestry and sex-stratified GWAS in UK Biobank, the Million Veteran Program, and the Michigan Genomics Initiative, as well as multi-omics Mendelian randomization in the Canadian Longitudinal Study on Aging. My study of Parkinson's disease and kidney-related traits was published in [Nature Communications (2026)](https://doi.org/10.1038/s41467-026-77920-3), and our review of kidney health and neurodegeneration in [Brain (2025)](https://doi.org/10.1093/brain/awaf113) was featured on the journal's [podcast](https://open.spotify.com/episode/0OdP5vSjzd7nMwLEeetqsR).
+
+#### Keywords
+
+genome-wide association studies (GWAS), complex traits, Mendelian randomization, genetic correlation, colocalization, multi-ancestry genomics, multi-omics, systems biology, neurodegenerative diseases, bioinformatics platforms
 
 #### Awards and recognitions
 
