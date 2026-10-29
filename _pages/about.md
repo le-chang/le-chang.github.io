@@ -34,7 +34,7 @@ I have trained in computational genetics and bioinformatics, and worked three ye
 
 #### Keywords
 
-genome-wide association studies (GWAS), complex traits, Mendelian randomization, genetic correlation, colocalization, multi-ancestry genomics, multi-omics, systems biology, neurodegenerative diseases, bioinformatics platforms
+genome-wide association studies (GWAS), complex traits, Mendelian randomization, genetic correlation, colocalization, non-coding RNA, gene regulatory networks, multi-omics, systems biology, neurodegenerative diseases, bioinformatics tool development
 
 #### Awards and recognitions
 
