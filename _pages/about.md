@@ -21,6 +21,13 @@ latest_posts:
 **Seeking faculty and research scientist positions in academia or industry, starting in 2027-2028** [Curriculum vitae (PDF)](/assets/pdf/Le_Chang_CV.pdf) 
 
 
+#### At a glance
+
+- **7,500+ citations** ([Google Scholar](https://scholar.google.com/citations?user=4gp69pcAAAAJ), as of Oct 2026) and three ESI Highly Cited Papers
+- **11 peer-reviewed articles**, including *Nature Communications* (2), *Nature Genetics*, *Brain* and *Nucleic Acids Research*
+- **Lead developer of miRNet 2.0** (70,000+ users) and **core contributor to MetaboAnalyst 5.0** (500,000+ users) & **PheWeb2** 
+- **CIHR Fellowship** as principal applicant ($140,000, 2025–2027)
+
 #### Degrees
 
 - **PhD**, Human Genetics, McGill University, 2023
@@ -30,11 +37,21 @@ latest_posts:
 
 #### Short bio
 
-I have trained in computational genetics and bioinformatics, and worked three years in industry before graduate school. In [Prof. Qingling Duan's lab](https://www.duanlab.ca/index.html) at Queen's University, I ran a genome-wide association study of human milk oligosaccharides in the CHILD Cohort Study, published in [Nature Communications (2024)](https://doi.org/10.1038/s41467-024-51743-6). In [Prof. Jianguo (Jeff) Xia's lab](https://www.xialab.ca) at McGill University, I was lead developer and first author of [miRNet 2.0](https://doi.org/10.1093/nar/gkaa467) and [mGWAS-Explorer 1.0](https://doi.org/10.3390/metabo12060526) & [2.0](https://doi.org/10.3390/metabo13070826), and a contributing developer of [MetaboAnalyst 5.0](https://doi.org/10.1093/nar/gkab382) — platforms used by hundreds of thousands of researchers. I am currently a CIHR postdoctoral research fellow in [Prof. Sarah Gagliano Taliun's lab](https://sgagliano.github.io/) at the Montreal Heart Institute / Université de Montréal, where I lead cross-trait genetic analyses linking kidney, liver, and metabolic traits to neurodegenerative diseases, using multi-ancestry and sex-stratified GWAS in UK Biobank, the Million Veteran Program, and the Michigan Genomics Initiative, as well as multi-omics Mendelian randomization in the Canadian Longitudinal Study on Aging. My study of Parkinson's disease and kidney-related traits was published in [Nature Communications (2026)](https://doi.org/10.1038/s41467-026-77920-3), and our review of kidney health and neurodegeneration in [Brain (2025)](https://doi.org/10.1093/brain/awaf113) was featured on the journal's [podcast](https://open.spotify.com/episode/0OdP5vSjzd7nMwLEeetqsR).
+I have trained in computational genetics and bioinformatics, and worked three years in industry before graduate school. In [Prof. Qingling Duan's lab](https://www.duanlab.ca/index.html) at Queen's University, I ran a genome-wide association study of human milk oligosaccharides in the CHILD Cohort Study, published in [Nature Communications (2024)](https://doi.org/10.1038/s41467-024-51743-6). In [Prof. Jianguo (Jeff) Xia's lab](https://www.xialab.ca) at McGill University, I was lead developer and first author of [miRNet 2.0](https://doi.org/10.1093/nar/gkaa467) and [mGWAS-Explorer 1.0](https://doi.org/10.3390/metabo12060526) & [2.0](https://doi.org/10.3390/metabo13070826), and a contributing developer of [MetaboAnalyst 5.0](https://doi.org/10.1093/nar/gkab382) — platforms with hundreds of thousands of users. I am currently a CIHR postdoctoral research fellow in [Prof. Sarah Gagliano Taliun's lab](https://sgagliano.github.io/) at the Montreal Heart Institute / Université de Montréal, where I lead cross-trait genetic analyses linking kidney, liver, and metabolic traits to neurodegenerative diseases, using multi-ancestry and sex-stratified GWAS in UK Biobank, the Million Veteran Program, and the Michigan Genomics Initiative, as well as multi-omics Mendelian randomization in the Canadian Longitudinal Study on Aging. My study of Parkinson's disease and kidney-related traits was published in [Nature Communications (2026)](https://doi.org/10.1038/s41467-026-77920-3), and our review of kidney health and neurodegeneration in [Brain (2025)](https://doi.org/10.1093/brain/awaf113) was featured on the journal's [podcast](https://open.spotify.com/episode/0OdP5vSjzd7nMwLEeetqsR).
 
 #### Keywords
 
 genome-wide association studies (GWAS), complex traits, Mendelian randomization, genetic correlation, colocalization, non-coding RNA, gene regulatory networks, multi-omics, systems biology, neurodegenerative diseases, bioinformatics tool development
+
+#### News
+
+- **Oct 2026** — Three posters at the ASHG 2026 Annual Meeting in Montreal, including my presentation of our Parkinson's disease and kidney work.
+- **Sep 2026** — Our study of shared genetic architecture between Parkinson's disease and kidney-related traits is published in [*Nature Communications*](https://doi.org/10.1038/s41467-026-77920-3).
+- **Feb 2026** — [PheWeb 2](https://doi.org/10.1038/s41588-025-02469-8), our platform for exploring stratified GWAS results, is published in *Nature Genetics*.
+- **Oct 2025** — Poster at the ASHG 2025 Annual Meeting in Boston on genetic correlations across the kidney–brain axis.
+- **Jun 2025** — Guest on [The Brain Podcast](https://open.spotify.com/episode/0OdP5vSjzd7nMwLEeetqsR), discussing our *Brain* review of kidney health and neurodegeneration.
+- **April 2025** — Awarded a CIHR Fellowship for a multi-ancestry genetic study of hematuria.
+- **Sep 2024** — Joined [Prof. Sarah Gagliano Taliun's lab](https://sgagliano.github.io/) at the Montreal Heart Institute / Université de Montréal.
 
 #### Awards and recognitions
 
@@ -42,8 +59,8 @@ genome-wide association studies (GWAS), complex traits, Mendelian randomization,
 - Postdoctoral Fellowship Award, Heart and Stroke Foundation of Canada, 2025 (declined in favour of the CIHR Fellowship)
 - CPRIT BIG-TCR Postdoctoral Fellowship, 2024
 - NSERC CREATE MATRIX Scholarship, 2019–2023
-- ISMB 2020 Fellowship Award, International Society for Computational Biology
 - MANA Early-Career Travel Award, Metabolomics Association of North America, 2022
+- ISMB 2020 Fellowship Award, International Society for Computational Biology, 2020
 - Graduate Excellence Award, Department of Human Genetics, McGill University, 2019
 - Three ESI Highly Cited Papers (Web of Science); miRNet 2.0 cited more than 900 times
 
@@ -54,6 +71,13 @@ genome-wide association studies (GWAS), complex traits, Mendelian randomization,
 - **Translational multi-omics: biomarkers and drug targets.** Integrating proteomic, metabolomic and transcriptomic QTLs with GWAS, in birth cohorts as well as aging cohorts, to prioritize predictive and prognostic biomarkers and genetically validated therapeutic targets, including drug-target and drug-response genes, as a route to pharmacogenomics and precision medicine.
 - **Multi-ancestry and sex-stratified genomics.** Large-scale GWAS meta-analysis of complex traits and diseases across ancestries and sexes, so that genomic discoveries benefit all populations equitably.
 - **Open bioinformatics platforms and reproducible pipelines.** Web-based platforms and Nextflow workflows that provide clinicians and researchers with user-friendly, intuitive interfaces for complex data analyses.
+
+#### Software
+
+- **[miRNet 2.0](https://www.mirnet.ca)** (lead developer): network-based visual analytics for microRNA function and systems biology, with more than 70,000 users. miRNet has been used in NASA spaceflight research ([*Cell Reports*, 2020](https://doi.org/10.1016/j.celrep.2020.108448)) and in a Columbia University brain-organoid study of 22q11.2 deletion-associated schizophrenia ([*Nature Communications*, 2025](https://doi.org/10.1038/s41467-025-62187-x)).
+- **[mGWAS-Explorer 1.0 and 2.0](https://www.mgwas.ca)** (lead developer): links genetic variants, genes, metabolites and diseases to help interpret metabolite–phenotype associations.
+- **[MetaboAnalyst 5.0](https://www.metaboanalyst.ca)** (core contributor): designed the network analysis module of a metabolomics platform with more than 500,000 users.
+- **[PheWeb 2](https://github.com/GaglianoTaliun-Lab/PheWeb2)** (core contributor): open-source browser for exploring stratified GWAS results.
 
 #### Publications
 
@@ -94,4 +118,3 @@ View a list of current publications on [Google Scholar.](https://scholar.google.
 8. **Exploring and visualizing stratified genome-wide association study results with PheWeb 2**<br>
    J. Bellavance\*, H. Xiao\*, **L. Chang**, M. Kazemi, S. Wickramasinghe, A.J. Mayhew, P. Raina, P. VandeHaar, D. Taliun, S.A. Gagliano Taliun<br>
    *Nature Genetics*, 2026; 58(2):233–235 · [doi:10.1038/s41588-025-02469-8](https://doi.org/10.1038/s41588-025-02469-8)
-
