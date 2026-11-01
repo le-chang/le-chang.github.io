@@ -25,7 +25,7 @@ latest_posts:
 
 - **7,500+ citations** ([Google Scholar](https://scholar.google.com/citations?user=4gp69pcAAAAJ), as of Oct 2026) and three ESI Highly Cited Papers
 - **14 publications**, including *Nature Communications*, *Nature Genetics*, *Brain* and *Nucleic Acids Research*
-- **Lead developer of miRNet 2.0** (70,000+ users) and **core contributor to MetaboAnalyst 5.0** (500,000+ users) & **PheWeb2** 
+- **Lead developer of miRNet 2.0** (70,000+ users) and **core developer to MetaboAnalyst 5.0** (500,000+ users) & **PheWeb2** 
 - **CIHR Fellowship** as principal applicant ($140,000, 2025–2027)
 
 #### Degrees
