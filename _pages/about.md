@@ -18,13 +18,13 @@ latest_posts:
 ---
 
 
-**Seeking faculty and research scientist positions in academia or industry, starting in 2027-2028** [Curriculum vitae (PDF)](/assets/pdf/Le_Chang_CV.pdf) 
+**I am on the job market** for faculty and research scientist positions in academia or industry, starting in 2027 or 2028. [Curriculum vitae (PDF)](/assets/pdf/Le_Chang_CV.pdf)
 
 
 #### At a glance
 
 - **7,500+ citations** ([Google Scholar](https://scholar.google.com/citations?user=4gp69pcAAAAJ), as of Oct 2026) and three ESI Highly Cited Papers
-- **11 peer-reviewed articles**, including *Nature Communications* (2), *Nature Genetics*, *Brain* and *Nucleic Acids Research*
+- **14 publications**, including *Nature Communications*, *Nature Genetics*, *Brain* and *Nucleic Acids Research*
 - **Lead developer of miRNet 2.0** (70,000+ users) and **core contributor to MetaboAnalyst 5.0** (500,000+ users) & **PheWeb2** 
 - **CIHR Fellowship** as principal applicant ($140,000, 2025–2027)
 
