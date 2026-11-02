@@ -45,13 +45,18 @@ genome-wide association studies (GWAS), complex traits, Mendelian randomization,
 
 #### News
 
+<div markdown="1" style="max-height: 10.5rem; overflow-y: auto; padding-right: 0.5rem; margin-bottom: 1rem;">
+
 - **Oct 2026** — Three posters at the ASHG 2026 Annual Meeting in Montreal, including my presentation of our Parkinson's disease and kidney work.
 - **Sep 2026** — Our study of shared genetic architecture between Parkinson's disease and kidney-related traits is published in [Nature Communications](https://doi.org/10.1038/s41467-026-77920-3).
 - **Feb 2026** — [PheWeb 2](https://doi.org/10.1038/s41588-025-02469-8), our platform for exploring stratified GWAS results, is published in *Nature Genetics*.
 - **Oct 2025** — Poster at the ASHG 2025 Annual Meeting in Boston on genetic correlations across the kidney–brain axis.
 - **Jun 2025** — Guest on [The Brain Podcast](https://open.spotify.com/episode/0OdP5vSjzd7nMwLEeetqsR), discussing our *Brain* review of kidney health and neurodegeneration.
-- **April 2025** — Awarded a CIHR Fellowship for a multi-ancestry genetic study of hematuria.
+- **Apr 2025** — Awarded a CIHR Fellowship for a multi-ancestry genetic study of hematuria.
+- **Mar 2025** — Our review, *The relationship between kidney health and neurodegenerative diseases*, is published in [*Brain*](https://doi.org/10.1093/brain/awaf113).
 - **Sep 2024** — Joined [Prof. Sarah Gagliano Taliun's lab](https://sgagliano.github.io/) at the Montreal Heart Institute / Université de Montréal.
+
+</div>
 
 #### Awards and recognitions
 
