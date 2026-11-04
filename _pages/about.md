@@ -18,7 +18,7 @@ latest_posts:
 ---
 
 
-**I am on the job market** for faculty and research scientist positions in academia or industry, starting in 2027 or 2028. [Curriculum vitae (PDF)](/assets/pdf/Le_Chang_CV.pdf)
+**I am on the job market** for faculty and research scientist positions in academia or industry, starting in 2027-2028. [Curriculum vitae (PDF)](/assets/pdf/Le_Chang_CV.pdf)
 
 
 #### At a glance
