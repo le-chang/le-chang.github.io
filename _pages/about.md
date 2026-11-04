@@ -4,7 +4,7 @@ title: home
 permalink: /
 subtitle: >
   CIHR Postdoctoral Research Fellow - Computational Genetics and Bioinformatics<br>
-  Gagliano Taliun Lab, Research Centre, Montreal Heart Institute &amp; Faculty of Medicine, Université de Montréal<br>
+  Gagliano Taliun Lab, Research Centre, Montreal Heart Institute (Institut de Cardiologie de Montréal) &amp; Faculty of Medicine, Université de Montréal<br>
   <strong>Contact</strong>: le.chang [at] umontreal [dot] ca
 
 selected_papers: false # the Selected Publications list is written directly below (no theme block)
